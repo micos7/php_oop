@@ -1,0 +1,18 @@
+{
+    "name": "micos/framework",
+    "authors": [
+        {
+            "name": "micos7",
+            "email": "micos7@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Framework\\": "src/Framework"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^6.3"
+    }
+}
