@@ -11,7 +11,9 @@
             "Framework\\": "src/Framework"
         }
     },
-    "require": {},
+    "require": {
+        "guzzlehttp/psr7": "^1.4"
+    },
     "require-dev": {
         "phpunit/phpunit": "^6.3"
     }

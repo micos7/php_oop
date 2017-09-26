@@ -6,6 +6,10 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit23e655a9950d586796a489a466e22ca5
 {
+    public static $files = array (
+        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'p' => 
         array (
@@ -14,6 +18,14 @@ class ComposerStaticInit23e655a9950d586796a489a466e22ca5
         'W' => 
         array (
             'Webmozart\\Assert\\' => 17,
+        ),
+        'P' => 
+        array (
+            'Psr\\Http\\Message\\' => 17,
+        ),
+        'G' => 
+        array (
+            'GuzzleHttp\\Psr7\\' => 16,
         ),
         'F' => 
         array (
@@ -36,6 +48,14 @@ class ComposerStaticInit23e655a9950d586796a489a466e22ca5
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'GuzzleHttp\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
         ),
         'Framework\\' => 
         array (
