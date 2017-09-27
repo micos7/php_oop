@@ -8,9 +8,9 @@ use Framework\App;
 class AppTest extends TestCase {
     public function TestRedirectTrailingSlash() {
         $app = new App();
-        $request = new Request('/asdad/');
+        $request = new \GuzzleHttp\Psr7\ServerRequest('GET','/demoslash/');
         $response = $app->run($request);
-        $this->assertEquals('Location: /asdad', $response->getHeader('Location'));
-        $this->assertEquals(301, $response->getStatus());
+        $this->assertContains('/demoslash', $response->getHeader('Location'));
+        $this->assertEquals(301, $response->getStatusCode());
     }
 }
