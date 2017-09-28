@@ -12,9 +12,10 @@ Class App{
             ->withHeader('Location',substr($uri, 0, -1));
             return $response;
         }
-        $response = new Response();
-        $response->getBody()->write('Hello');
-        return $response;
+        if($uri === '/blog'){
+            return new Response(200,[],'Welcome to our blog');
+        }
+        return new Response(404,[],'Error 404');
     }
     
 }

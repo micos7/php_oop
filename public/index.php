@@ -3,7 +3,7 @@ require '../vendor/autoload.php';
 
 $app = new \Framework\App();
 
-$response = $app->run(GuzzleHttp\Psr7\ServerRequest::fromGlobals);
+$response = $app->run(GuzzleHttp\Psr7\ServerRequest::fromGlobals());
 
 
 
